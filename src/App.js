@@ -158,7 +158,7 @@ function App() {
       {/* Profile Image (Left Side - Recangle Shape) */}
       <div className="w-full md:w-1/5 flex justify-center md:justify-start">
         <img 
-          src="/profile.jpg" 
+          src={`${process.env.PUBLIC_URL}/profile.jpg`} 
           alt="Kamaleshwar" 
           className="w-64 h-80 object-cover border-5 border-yellow-300 shadow-lg rounded-lg -mt-10 md:-mt-20"
         />
@@ -190,20 +190,19 @@ function App() {
              className="flex items-center gap-2 bg-sky-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-sky-700 transition duration-300">
             <i className="fab fa-twitter"></i> Twitter
           </a>
-          <button 
-            onClick={() => window.open('/resume.pdf', '_blank')} className="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
+          <button
+          onClick={() => window.open(`${process.env.PUBLIC_URL}/resume.pdf`,'_blank')}className="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300"
+          >
             View My Resume
           </button>
-        </div>
+          </div>
       </div>
     </div>
   </div>
 </section>
-
-
       {/* Footer */}
       <footer className="bg-gray-800 text-white text-center py-8">
-        <p>© {new Date().getFullYear()} P.Kamaleshwar. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Lakshmi Kamaleshwar Parnandhi. All rights reserved.</p>
       </footer>
     </div>
   );
