@@ -150,7 +150,7 @@ function App() {
       {/* Contact Section */}
 <section id="contact" className="py-20 bg-gradient-to-r from-purple-600 to-indigo-700">
   <div className="container mx-auto px-6 text-white">
-    <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">📬 Contact Me</h2>
+    <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">📬 Get in Touch</h2>
 
     {/* Side by Side Layout */}
     <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12">
