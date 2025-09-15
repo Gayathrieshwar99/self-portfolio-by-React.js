@@ -29,9 +29,14 @@ function App() {
       </section>
 
       {/* About Section */}
-<section id="about" className="h-screen flex items-center justify-center bg-gradient-to-r from-indigo-600 to-skyblue-700 pt-16">
+<section 
+  id="about" 
+  className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-700 via-blue-600 to-sky-500 py-20"
+>
   <div className="text-center text-white max-w-4xl px-6">
-    <h2 className="text-4xl md:text-6xl font-bold mb-10">About Me</h2>
+    <h2 className="text-4xl md:text-6xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">
+      About Me
+    </h2>
     
     <p className="text-lg md:text-xl mb-6 leading-relaxed">
       My name is <span className="font-semibold text-yellow-300">P. Kamaleshwar</span>, and I’m from Anantapur.  
@@ -79,36 +84,50 @@ function App() {
 
 
       {/* Skills Section */}
-      <section id="skills"className="h-screen flex items-center justify-center bg-gradient-to-r from-gray-300 to-gray-500 pt-15">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-Red-500">My Skills</h2>
-        </div>
-          <div className="grid grid-cols-4 md:grid-cols-2 gap-9 text-center"></div>
-            <div className="bg-gray-200 p-5 rounded-lg shadow-md hover:shadow-lg transition duration-500">
-              <h3 className="font-semibold text-lg">Python</h3>
-              <p className="text-sm text-gray-500">Advanced</p>
-            </div>
-            <div className="bg-gray-100 p-3 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-              <h3 className="font-semibold text-lg">HTML/CSS</h3>
-              <p className="text-sm text-gray-500">Advanced</p>
-            </div>
-            <div className="bg-gray-100 p-3 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-              <h3 className="font-semibold text-lg">Django, DjangoRestFramework, CRUD</h3>
-              <p className="text-sm text-gray-500">Advanced</p>
-            </div>
-            <div className="bg-gray-100 p-3 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-              <h3 className="font-semibold text-lg">MySql</h3>
-              <p className="text-sm text-gray-500">Intermediate</p>
-            </div>
-            <div className="bg-gray-100 p-3 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-              <h3 className="font-semibold text-lg">Git and GitHub</h3>
-              <p className="text-sm text-gray-500">Intermediate</p>
-          </div>
-            <div className="bg-gray-100 p-3 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-              <h3 className="font-semibold text-lg">Azure</h3>
-              <p className="text-sm text-gray-500">Beginner</p>
-        </div>
-      </section>
+<section 
+  id="skills" 
+  className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 py-16"
+>
+  <div className="container mx-auto px-6">
+    <h2 className="text-5xl font-extrabold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+      My Skills
+    </h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
+      
+      <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 border border-white/20">
+        <h3 className="font-bold text-xl text-white">Python</h3>
+        <p className="text-sm text-gray-300">Advanced</p>
+      </div>
+
+      <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 border border-white/20">
+        <h3 className="font-bold text-xl text-white">HTML / CSS</h3>
+        <p className="text-sm text-gray-300">Advanced</p>
+      </div>
+
+      <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 border border-white/20">
+        <h3 className="font-bold text-xl text-white">Django / DRF / CRUD</h3>
+        <p className="text-sm text-gray-300">Advanced</p>
+      </div>
+
+      <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 border border-white/20">
+        <h3 className="font-bold text-xl text-white">MySQL</h3>
+        <p className="text-sm text-gray-300">Intermediate</p>
+      </div>
+
+      <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 border border-white/20">
+        <h3 className="font-bold text-xl text-white">Git & GitHub</h3>
+        <p className="text-sm text-gray-300">Intermediate</p>
+      </div>
+
+      <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-500 border border-white/20">
+        <h3 className="font-bold text-xl text-white">Azure</h3>
+        <p className="text-sm text-gray-300">Beginner</p>
+      </div>
+    </div>
+  </div>
+</section>
+
       
       {/* Projects Section */}
 <section id="projects" className="h-screen flex items-center justify-center bg-gradient-to-r from-green-500 to-light-700 pt-16">
