@@ -7,7 +7,7 @@ function App() {
       <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
-            <div className="text-xl font-bold text-gray-800">Slef-Portfolio</div>
+            <div className="text-xl font-bold text-gray-800">Kamaleshwar Parnandhi</div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-gray-600 hover:text-blue-500">Home</a>
               <a href="#about" className="text-gray-600 hover:text-blue-500">About</a>
