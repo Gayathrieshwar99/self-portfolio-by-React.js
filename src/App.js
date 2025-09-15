@@ -165,36 +165,42 @@ function App() {
   </div>
 </section>
 
-
-      {/* Contact Section */}
+{/* Contact Section */}
 <section id="contact" className="py-20 bg-gradient-to-r from-purple-600 to-indigo-700">
   <div className="container mx-auto px-6 text-white">
     <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">📬 Get in Touch</h2>
 
     {/* Side by Side Layout */}
-    <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12">
-      
-      {/* Profile Image (Left Side - Recangle Shape) */}
+    <div className="flex flex-col md:flex-row items-start justify-between gap-12">
+
+      {/* Profile Image (Left Side - Rectangle Shape) */}
       <div className="w-full md:w-1/5 flex justify-center md:justify-start">
         <img 
           src={`${process.env.PUBLIC_URL}/profile.jpg`} 
           alt="Kamaleshwar" 
-          className="w-64 h-80 object-cover border-5 border-yellow-300 shadow-lg rounded-lg -mt-10 md:-mt-20"
+          className="w-64 h-80 object-cover border-4 border-yellow-300 shadow-lg rounded-lg -mt-10 md:-mt-20"
         />
       </div>
 
-      {/* Contact Details (Right Side) */}
+      {/* Contact Details (Middle Side) */}
       <div className="w-full md:w-2/3 text-center md:text-left">
         <p className="text-lg md:text-xl mb-4">
-          Email: <a href="mailto:pkamallife@gmail.com" className="text-yellow-300 hover:underline">pkamallife@gmail.com</a>
+          I’m currently looking for new opportunities.  
+          Whether you have a question or just want to say hi, my inbox is always open.  
+          I’ll try my best to get back to you!
         </p>
-        
-        <p className="text-lg md:text-xl mb-8">
+        <p className="text-md text-gray-300 mb-6">
+          You can also reach me at: 
+          <a href="mailto:pkamallife@gmail.com" className="text-yellow-300 hover:underline ml-2">
+            pkamallife@gmail.com
+          </a>
+        </p>
+        <p className="text-lg text-gray-200 mb-8">
           Phone: <span className="text-yellow-200">+91 7989390757</span>
         </p>
 
         {/* Social Links */}
-        <div className="flex justify-center md:justify-start space-x-6">
+        <div className="flex flex-wrap justify-center md:justify-start gap-4">
           <a href="https://github.com/Gayathrieshwar99" 
              className="flex items-center gap-2 bg-gray-900 text-white px-5 py-3 rounded-full shadow-lg hover:bg-black transition duration-300">
             <i className="fab fa-github"></i> GitHub
@@ -209,20 +215,64 @@ function App() {
              className="flex items-center gap-2 bg-sky-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-sky-700 transition duration-300">
             <i className="fab fa-twitter"></i> Twitter
           </a>
+
           <button
-          onClick={() => window.open(`${process.env.PUBLIC_URL}/resume.pdf`,'_blank')}className="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300"
+            onClick={() => window.open(`${process.env.PUBLIC_URL}/resume.pdf`, '_blank')}
+            className="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition duration-300"
           >
             View My Resume
           </button>
-          </div>
+        </div>
+      </div>
+
+      {/* Right Side - Inbox Form */}
+      <div className="w-full md:w-1/3 bg-white/5 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/10">
+        <h3 className="text-xl font-bold mb-3 text-white">Say Hi 👋</h3>
+        <form className="flex flex-col space-y-3">
+          {/* Name input */}
+          <input
+            type="text"
+            placeholder="Your Name"
+            className="w-full p-3 rounded-lg bg-gray-100 text-gray-900 
+            focus:outline-none focus:ring-2 focus:ring-pink-400"
+          />
+
+          {/* Email input */}
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="w-full p-3 rounded-lg bg-gray-100 text-gray-900
+            focus:outline-none focus:ring-2 focus:ring-pink-400"
+          />
+
+          {/* Message box */}
+          <textarea
+            placeholder="Type your message here..."
+            rows={4}
+            className="w-full p-3 rounded-lg bg-gray-100 text-gray-900 
+            focus:outline-none focus:ring-2 focus:ring-pink-400"
+          ></textarea>
+          
+          {/* Submit button */}
+<button
+  type="button"
+  onClick={() => window.location.href = "mailto:pkamallife@gmail.com?subject=Hello&body=Hi Kamal,"}
+  className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white
+  py-3 px-6 rounded-lg font-semibold shadow-lg hover:scale-105 transition duration-300"
+>
+  Send Message
+</button>
+
+        </form>
       </div>
     </div>
   </div>
 </section>
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white text-center py-8">
-        <p>© {new Date().getFullYear()} Lakshmi Kamaleshwar Parnandhi. All rights reserved.</p>
-      </footer>
+
+{/* Footer */}
+<footer className="bg-gray-800 text-white text-center py-8">
+  <p>© {new Date().getFullYear()} Lakshmi Kamaleshwar Parnandhi. All rights reserved.</p>
+</footer>
     </div>
   );
 }
