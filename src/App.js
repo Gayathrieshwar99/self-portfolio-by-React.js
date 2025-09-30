@@ -161,6 +161,18 @@ function App() {
         </p>
       </div>
 
+      {/* Project 3 */}
+      <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 className="text-xl font-bold mb-3 text-blue-600">Project 3: AI Recruitment Management System</h3>
+        <p className="text-gray-700 leading-relaxed">
+          We are building an AI-powered system to automate the recruitment process. The system
+	will:
+		An AI-powered platform that automates hiring by analyzing job descriptions, ranking resumes, recommending top candidates, and even sourcing profiles from job portals with automated outreach.  
+          <br />
+          <span className="text-indigo-600 font-semibold">Technologies:</span> Backend: Python (Django)React, OpenAI API, and Azure for full-stack deployment
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
